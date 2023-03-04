@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import { JSDOM } from "jsdom";
 
 export const fetch = async (url) => {
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch({headless: false,args: ['--use-gl=egl']});
     const page = await browser.newPage();
     await page.goto(url, { 'timeout': 10e4, 'waitUntil':'load'});
     const res = await page.content();

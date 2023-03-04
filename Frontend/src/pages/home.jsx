@@ -1,6 +1,8 @@
 import About from "./components/About";
 import Books from "./components/Books";
 import Courses from "./components/Courses";
+import Form from "./components/Form/Form";
+import Social from "./components/Social";
 
 import "./home.css";
 
@@ -10,8 +12,8 @@ const Home = () => {
       <About />
       <Books />
       <Courses />
-      <Books />
-      <Books />
+      <Social />
+      <Form />
     </div>
   );
 };

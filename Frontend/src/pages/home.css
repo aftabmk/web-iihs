@@ -231,3 +231,36 @@ img{
 p{
   margin: 20px;
 }
+/* team */
+.team {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team img{
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 200px;
+}
+.team .glass .social{
+  display: flex;
+  max-height: 200px;
+  flex-flow: column wrap;
+}
+.team .marquee {
+  margin: 0;
+  padding: 0;
+  animation: scroll 600s linear 0s infinite;
+}
+.team .marquee:nth-child(2) {
+  animation: antiscroll 60s linear 0s infinite;
+}
+@keyframes antiscroll {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}

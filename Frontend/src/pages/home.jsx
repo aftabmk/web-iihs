@@ -3,6 +3,7 @@ import Books from "./components/Books";
 import Courses from "./components/Courses";
 import Form from "./components/Form/Form";
 import Social from "./components/Social";
+import Team from "./components/team";
 
 import "./home.css";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <Books />
       <Courses />
       <Social />
+      <Team />
       <Form />
     </div>
   );
